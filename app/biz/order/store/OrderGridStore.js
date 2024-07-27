@@ -1,7 +1,8 @@
-Ext.define('erp.store.OrderList', {
+//store就是vm,链接view与model
+Ext.define('erp.biz.order.store.OrderGridStore', {
     extend: 'Ext.data.Store',
 
-    alias: 'store.orderList',
+    alias: 'store.orderGridStore',
 
     fields: [
         'name', 'email', 'phone'

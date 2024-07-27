@@ -15,7 +15,8 @@ Ext.define('erp.view.main.Main', {
 
         'erp.view.main.MainController',
         'erp.view.main.MainModel',
-        'erp.view.main.List'
+        'erp.view.main.List',
+        'erp.biz.order.view.OrderGrid'
     ],
 
     controller: 'main',
@@ -98,7 +99,7 @@ Ext.define('erp.view.main.Main', {
         title: '订单',
         iconCls: 'fa-cog',
         items: [{
-            xtype: 'orderList'
+            xtype: 'orderGrid'
         }]
     }]
 });

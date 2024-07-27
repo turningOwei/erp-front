@@ -1,21 +1,21 @@
 /**
  * This view is an example list of people.
  */
-Ext.define('erp.view.main.OrderList', {
-    dataUrl     :  SysConfig.ctx + '/account/listByPage.do',
-    extend 		: 'ExtUx.grid.CusGrid',
-    xtype: 'mainOrderList',
+Ext.define('erp.biz.order.view.OrderGrid', {
+    dataUrl: SysConfig.ctx + '/account/listByPage.do',
+    extend: 'ExtUx.grid.CusGrid',
+    xtype: 'orderGrid',
 
     requires: [
-        'erp.store.OrderList'
+        'erp.biz.order.store.OrderGridStore'
     ],
 
     title: '订单',
 
     store: {
-        type: 'orderList'
+        type: 'orderGridStore'
     },
-    buildColumns:function(){
+    buildColumns: function () {
         return [
             {text: '订单项1', dataIndex: 'name'},
             {text: '订单项2', dataIndex: 'email', flex: 1},

@@ -1,3 +1,5 @@
+//store就是vm,链接view与model
+
 Ext.define('erp.store.Personnel', {
     extend: 'Ext.data.Store',
 
