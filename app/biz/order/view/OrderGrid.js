@@ -2,7 +2,7 @@
  * This view is an example list of people.
  */
 Ext.define('erp.biz.order.view.OrderGrid', {
-    dataUrl: SysConfig.ctx + '/account/listByPage.do',
+    dataUrl: SysConfig.ctx + '/order/listByPage',
     extend: 'ExtUx.grid.CusGrid',
     xtype: 'orderGrid',
 
@@ -17,9 +17,9 @@ Ext.define('erp.biz.order.view.OrderGrid', {
     },
     buildColumns: function () {
         return [
-            {text: '订单项1', dataIndex: 'name'},
-            {text: '订单项2', dataIndex: 'email', flex: 1},
-            {text: '订单项3', dataIndex: 'phone', flex: 1}
+            {text: 'id', dataIndex: 'id',},
+            {text: '订单号', dataIndex: 'orderNo', flex: 1},
+            {text: '名称', dataIndex: 'name', flex: 1}
         ];
     }
 });
